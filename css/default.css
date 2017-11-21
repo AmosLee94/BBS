@@ -1,0 +1,217 @@
+@charset "UTF-8";
+@media screen and (max-width: 600px) {
+  section {
+    width: 100%; }
+
+  .auxiliary {
+    width: 100%; }
+
+  nav {
+    height: 50px; }
+    nav a {
+      margin: 2.5px;
+      padding: 2.5px 15px;
+      height: 20px;
+      line-height: 15px; }
+      nav a:hover {
+        padding: 5px 15px;
+        height: 25px; } }
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  section {
+    margin-left: auto;
+    margin-right: auto; }
+
+  aside {
+    float: left;
+    clear: left;
+    width: 200px; }
+
+  nav {
+    height: 50px; }
+    nav a {
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 5px 15px;
+      height: 40px;
+      line-height: 30px; }
+      nav a:hover {
+        padding: 5px 30px;
+        height: 50px; } }
+@media screen and (min-width: 1001px) {
+  section {
+    margin-left: auto;
+    margin-right: auto; }
+
+  aside {
+    float: right;
+    width: 200px; }
+    aside:first-of-type {
+      float: left; }
+
+  nav {
+    height: 50px; }
+    nav a {
+      margin-left: 5px;
+      margin-right: 5px;
+      padding: 5px 15px;
+      height: 40px;
+      line-height: 30px; }
+      nav a:hover {
+        padding: 5px 30px;
+        height: 50px; } }
+.floor .left {
+  width: 20%; }
+  .floor .left .userwall img {
+    width: 240px;
+    height: 240px; }
+.floor .right {
+  width: 80%; }
+
+/*---------------------通用------------------------------*/
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.hidden {
+  display: none; }
+
+.block {
+  display: none; }
+
+a {
+  text-decoration: none; }
+  a:link, a:visited, a:active {
+    color: #16B1FF; }
+  a:hover {
+    color: #FF6200; }
+
+* {
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  /* Firefox 4 */
+  -webkit-transition: all 0.35s;
+  /* Safari 和 Chrome */
+  -o-transition: all 0.35s; }
+
+/*--------------------------------------*/
+body {
+  background-image: url("../img/bg/bg01.jpg");
+  margin: 0; }
+
+header {
+  height: 200px;
+  margin: 0 auto;
+  position: relative; }
+  header .h_left {
+    color: #F7FF00;
+    margin: 20px;
+    float: left;
+    font-size: 60px; }
+  header .h_right {
+    position: absolute;
+    right: 30px;
+    bottom: 10px; }
+
+nav {
+  border-top: 10px solid #9df;
+  background: #dcedfe; }
+  nav a {
+    display: block;
+    float: left;
+    text-align: center;
+    border: 2px solid #9df;
+    border-top: 0;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box; }
+    nav a:hover {
+      background: #FFC5A0;
+      border-color: #FF6200; }
+
+footer {
+  height: 80px;
+  text-align: center;
+  clear: both;
+  background: #FFFFFF; }
+
+section {
+  overflow: hidden; }
+
+.box {
+  box-shadow: 0 0 50px #000;
+  background: #FFFFFF;
+  border: 2px solid #9df;
+  margin: 20px;
+  border-radius: 0 0 10px 10px; }
+  .box .box_header {
+    background-color: #def;
+    overflow: auto;
+    padding: 5px;
+    padding-left: 15px;
+    border: 2px solid #9df;
+    margin: -2px;
+    margin-bottom: 10px; }
+    .box .box_header .right {
+      height: 20px;
+      width: 20px;
+      text-align: center;
+      border: 2px solid #9df;
+      font-size: 2px;
+      border-radius: 10px; }
+      .box .box_header .right:hover {
+        background-color: #FFC5A0;
+        border-color: #FF6200; }
+  .box .box_body {
+    padding: 5px 15px;
+    border-radius: 2px; }
+  .box table {
+    width: 100%;
+    border-collapse: collapse; }
+    .box table tr:hover td {
+      background-color: #def; }
+
+aside {
+  overflow: hidden; }
+  aside .box {
+    margin: 10px; }
+
+/*---------------------------------------------------*/
+/*topic 里面的每个楼层*/
+.topic_title {
+  border-top: 10px solid #FF6200;
+  border-bottom: 10px solid #9df;
+  background-color: #FFC5A0;
+  line-height: 40px;
+  font-size: 30px; }
+  .topic_title .topic_label {
+    font-size: 15px;
+    margin-left: 1em; }
+
+.floor {
+  border-bottom: 2px solid #9df;
+  overflow: hidden;
+  position: relative;
+  background-color: #def; }
+  .floor .left {
+    text-align: center; }
+    .floor .left .userwall img {
+      display: block;
+      margin: 20px auto; }
+  .floor .right {
+    background-color: #FFFFFF;
+    padding: 1em 1em 4em 1em;
+    box-sizing: border-box;
+    border-left: 2px solid #9df; }
+    .floor .right .bottom {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 1em; }
+
+/*# sourceMappingURL=default.css.map */

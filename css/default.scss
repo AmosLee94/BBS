@@ -1,0 +1,186 @@
+@import "layout.scss";
+// 颜色
+$c-body:#6A6A6A;
+$c-bg:#FFFFFF;
+$c-label:#def;
+$c-label-focus:#FFC5A0;
+$c-border:#9df;
+$c-border-focus:#FF6200;
+//字体颜色
+$c-font-a:#16B1FF;
+$c-font-focus:#FF6200;
+// 线条粗细
+$w-line-basic:2px;
+//圆角
+$r-basic:10px;
+
+/*---------------------通用------------------------------*/
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+}
+.hidden{
+	display: none;
+}
+.block{
+	display: none;
+}
+a{
+	text-decoration:none;
+	&:link,&:visited,&:active{color:$c-font-a;}
+	&:hover {color:$c-font-focus;}
+}
+*{
+	transition: all 0.35s;
+	-moz-transition: all 0.35s;	/* Firefox 4 */
+	-webkit-transition: all 0.35s;	/* Safari 和 Chrome */
+	-o-transition: all 0.35s;
+}
+/*--------------------------------------*/
+body{
+	background-image:url('../img/bg/bg01.jpg');
+	// background:-webkit-linear-gradient(left top,#5dbf8c 0%,#8ecb84 25%,#bad97a 50%,#dab470 75%,#f08f67 100%);
+	margin:0;
+}
+header{
+	// background: $c-bg;
+	height: 200px;
+	margin: 0 auto;
+	position:relative;
+	.h_left{
+		color:#F7FF00;
+		margin: 20px;
+		float: left;
+		font-size: 60px;
+	}
+	.h_right{
+		position: absolute;
+		right: 30px;
+		bottom: 10px;
+	}
+}
+nav{
+	border-top: 5*$w-line-basic solid $c-border;
+	background: mix(#000,$c-label,0.5);
+	a{
+		display: block;
+		float: left;
+		text-align: center;		
+		border: $w-line-basic solid $c-border;	
+		border-top: 0;
+		border-radius:  0 0 2*$r-basic 2*$r-basic;
+		box-sizing:border-box;	
+		&:hover{
+			background: $c-label-focus;
+			border-color: $c-border-focus;	
+		}
+	}
+}
+footer{
+	height: 80px;
+	text-align: center;
+	clear: both;
+	background: $c-bg;
+}
+
+section{
+	overflow:hidden;
+
+}
+// -----------------------------------------
+.box{
+	box-shadow: 0 0 50px #000;
+	background: $c-bg;	
+	border: $w-line-basic solid $c-border;
+	margin: 20px;
+	border-radius:  0 0 $r-basic $r-basic;
+	// box-shadow: 10px 10px 5px rgba(136,136,136,0.5);
+	.box_header{
+		background-color: $c-label;
+		overflow:auto;
+		padding: 5px;
+		padding-left: 15px;
+		border: $w-line-basic solid $c-border;
+		margin: -$w-line-basic;
+		margin-bottom: $r-basic;
+		.right{
+			height: 20px;
+			width: 20px;
+			text-align: center;
+			border: $w-line-basic solid #9df;
+			font-size:$w-line-basic;
+			border-radius: 10px;
+			&:hover{
+				background-color: $c-label-focus;
+				border-color: $c-border-focus;
+				
+			}
+		}
+	}
+	.box_body{
+		padding: 5px 15px;
+		border-radius: $w-line-basic;
+	}
+	table{
+		width:100%;
+		border-collapse : collapse ;
+		tr{&:hover{
+			td{
+				background-color: $c-label;
+				}
+			}
+		}
+	}
+}
+aside{
+	overflow:hidden;
+	.box{
+		margin: 10px;
+		// box-shadow: 5px 5px  2.5px rgba(255,255,255,0.5);
+	}
+}
+/*---------------------------------------------------*/
+
+/*topic 里面的每个楼层*/
+.topic_title{
+	border-top: $w-line-basic*5 solid $c-border-focus;
+	border-bottom: $w-line-basic*5 solid $c-border;
+	background-color:$c-label-focus;
+	line-height:40px;
+	font-size: 30px;	
+	.topic_label{
+		font-size: 15px;
+		margin-left: 1em;
+	}
+}
+.floor{
+	border-bottom: $w-line-basic solid $c-border;
+	overflow:hidden;
+	position:relative;
+		background-color:$c-label;
+	.left{
+		text-align: center;
+		.userwall img{
+			display: block;
+			margin: 20px auto;
+		}
+	}
+	.right{
+		background-color:$c-bg;
+		padding: 1em 1em 4em 1em;box-sizing:border-box;
+		border-left: $w-line-basic solid $c-border;
+		.bottom{
+			display: block;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			padding: 1em;
+		}
+	}
+}

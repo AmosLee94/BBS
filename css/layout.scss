@@ -1,0 +1,90 @@
+// 响应式布局
+
+@media screen and (max-width : 600px){
+	section{
+		width: 100%;
+	}
+	.auxiliary{
+		width: 100%;
+	}
+	nav{
+		height: 50px;
+		a{
+			margin: 2.5px;
+			padding: 2.5px 15px;
+			height: 20px;
+			line-height:15px;
+			&:hover{
+				padding: 5px 15px;
+				height: 25px;	
+			}
+		}
+	}
+}
+@media screen and (min-width : 601px)and (max-width : 1000px){
+	section{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	aside{
+		float: left;
+		clear: left;
+		width: 200px;
+	}
+	nav{
+		height: 50px;
+		a{
+			margin-left: 5px;
+			margin-right: 5px;
+			padding: 5px 15px;
+			height: 40px;
+			line-height:30px;
+			&:hover{
+				padding: 5px 30px;
+				height: 50px;	
+			}
+		}
+	}
+}
+@media screen and (min-width : 1001px){
+	section{
+		margin-left:auto;
+		margin-right:auto;
+	}
+	aside{
+		float: right;
+		width: 200px;
+		&:first-of-type{
+			float: left;
+		}
+	}
+	nav{
+		height: 50px;
+		a{
+			margin-left: 5px;
+			margin-right: 5px;
+			padding: 5px 15px;
+			height: 40px;
+			line-height:30px;
+			&:hover{
+				padding: 5px 30px;
+				height: 50px;	
+			}
+		}
+	}
+}
+// ----------------------
+.floor{
+	.left{
+		width:20%;
+		.userwall{
+			img{
+				width: 240px;
+				height: 240px;
+			}
+		}
+	}
+	.right{
+		width:80%;
+	}
+}
